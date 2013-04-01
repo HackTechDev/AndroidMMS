@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:state_expanded="true" android:drawable="@drawable/narrow_expand" />
-	<item android:drawable="@drawable/narrow_unexpand" />
-</selector> 
-<!-- 
-http://chenfeng0104.iteye.com/blog/1161722
- --> 

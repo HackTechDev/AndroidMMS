@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/rss_itemrow" android:layout_width="fill_parent"
-	android:layout_height="wrap_content" android:padding="4px"
-	android:orientation="vertical">
-	<ListView android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:id="@+id/mmslist" android:cacheColorHint="#00000000"/>
-</LinearLayout>
