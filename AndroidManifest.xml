@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wzx.andapp.shh"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- ".LifeAssistantActivity" BookActivity MyTab BookFSExplorer -->
+        <activity
+            android:label="@string/app_name"
+            android:name="MyTab" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="InfosAssistant" >
+        </activity>
+        <activity android:name=".SystemActivity" >
+        </activity>
+        <activity android:name="Hardware" >
+        </activity>
+        <activity android:name="Software" >
+        </activity>
+        <activity android:name="Runing" >
+        </activity>
+        <activity android:name="ShowInfo" >
+        </activity>
+        <activity android:name=".FSExplorer" >
+        </activity>
+        <activity android:name="LifeAssistantActivity" >
+        </activity>
+        <activity android:name=".BookActivity" >
+        </activity>
+        <activity android:name="LifeAssistantActivity" >
+        </activity>
+        <activity android:name="InputCmdActivity" >
+        </activity>
+        <activity android:name="SysQueryActivity" >
+        </activity>
+        <activity android:name="BottomTabActivity" >
+        </activity>
+        <activity android:name="BookFSExplorer" >
+        </activity>
+        <activity android:name="RssViewActivity" >
+        </activity>
+        <activity android:name="RssItemDetailActivity" >
+        </activity>
+        <activity android:name=".RssExpandActivity" >
+        </activity>
+        <activity android:name="RsslinkListActivity" >
+        </activity>
+        <activity android:name="NetAct" >
+        </activity>
+        <activity android:name="ListViewMainAct" >
+        </activity>
+        <activity android:name="ListViewForLoading" >
+        </activity>
+        <activity android:name="MmsReaderActivity" >
+        </activity>
+        <activity android:name="MmsListActivity"></activity>
+        <activity android:name="RssWebActivity"></activity>
+        <activity android:name="ImageViewDemoAct"></activity>
+        <activity android:name="GridViewDemo"></activity>
+        </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

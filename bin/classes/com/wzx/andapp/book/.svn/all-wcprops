@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book
+END
+BookPageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/BookPageFactory.java
+END
+BookContentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/BookContentManager.java
+END
+IBook.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/IBook.java
+END
+BookLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/BookLayout.java
+END
+Corner.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/Corner.java
+END
+IAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/IAdapter.java
+END
+BookState.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/BookState.java
+END
+BookAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/BookAdapter.java
+END
+IListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/book/IListener.java
+END

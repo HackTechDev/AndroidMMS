@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net
+END
+BaseRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/BaseRequest.java
+END
+AsyncHttpPost.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/AsyncHttpPost.java
+END
+RequestResultCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/RequestResultCallback.java
+END
+DefaultThreadPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/DefaultThreadPool.java
+END
+CopyOfHttpDownload.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/CopyOfHttpDownload.java
+END
+ParseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/ParseHandler.java
+END
+SyncHttpGet.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/SyncHttpGet.java
+END
+AsyncHttpGet.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/56/trunk/m-and/shh/src/com/wzx/andapp/net/AsyncHttpGet.java
+END
