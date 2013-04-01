@@ -22,55 +22,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="InfosAssistant" >
-        </activity>
-        <activity android:name=".SystemActivity" >
-        </activity>
-        <activity android:name="Hardware" >
-        </activity>
-        <activity android:name="Software" >
-        </activity>
-        <activity android:name="Runing" >
-        </activity>
-        <activity android:name="ShowInfo" >
-        </activity>
+
+
         <activity android:name=".FSExplorer" >
         </activity>
-        <activity android:name="LifeAssistantActivity" >
-        </activity>
+
         <activity android:name=".BookActivity" >
         </activity>
 
-        <activity android:name="InputCmdActivity" >
-        </activity>
-        <activity android:name="SysQueryActivity" >
-        </activity>
-        <activity android:name="BottomTabActivity" >
-        </activity>
         <activity android:name="BookFSExplorer" >
         </activity>
 
-        
-        <activity android:name="ListViewMainAct" >
-        </activity>
-        <activity android:name="ListViewForLoading" >
-        </activity>
+
         <activity android:name="MmsReaderActivity" >
         </activity>
         <activity android:name="MmsListActivity"></activity>
-        <activity android:name="RssWebActivity"></activity>
-        <activity android:name="ImageViewDemoAct"></activity>
-        <activity android:name="GridViewDemo"></activity>
+
         </application>
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
-    </uses-permission>
+
     <uses-permission android:name="android.permission.GET_TASKS" >
     </uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
 </manifest>
