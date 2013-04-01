@@ -33,27 +33,6 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 
 
 
-
-		myTabhost.addTab(myTabhost
-				.newTabSpec("Four")
-				// make a new Tab
-				.setIndicator("d",
-						getResources().getDrawable(R.drawable.mumule))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_red));
-				.setContent(new Intent(this, ListViewMainAct.class)));
-		// set the layout
-		
-		
-		myTabhost.addTab(myTabhost
-				.newTabSpec("five")
-				// make a new Tab
-				.setIndicator("E",
-						getResources().getDrawable(R.drawable.notepad))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_red));
-				.setContent(new Intent(this, ListViewForLoading.class)));
-		
 		
 		
 		myTabhost.addTab(myTabhost.newTabSpec("six")// make a new Tab
@@ -62,19 +41,11 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 				// .setContent(R.id.widget_layout_red));
 				.setContent(new Intent(this, MmsListActivity.class)));
 		myTabhost.setOnTabChangedListener(this);
-		myTabhost.addTab(myTabhost.newTabSpec("seven")// make a new Tab
-				.setIndicator("H", getResources().getDrawable(R.drawable.gimp))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_red));
-				.setContent(new Intent(this, ImageViewDemoAct.class)));
-		myTabhost.setOnTabChangedListener(this);
-		myTabhost.addTab(myTabhost.newTabSpec("eight")// make a new Tab
-				.setIndicator("I", getResources().getDrawable(R.drawable.gimp))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_red));
-				.setContent(new Intent(this, GridViewDemo.class)));
-		myTabhost.setOnTabChangedListener(this);
-		myTabhost.setCurrentTabByTag("eight");
+		
+
+
+		
+		myTabhost.setCurrentTabByTag("six");
 	}
 
 	@Override
