@@ -15,9 +15,7 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 	private TabHost myTabhost;
 	protected int myMenuSettingTag = 0;
 	protected Menu myMenu;
-	private static final int myMenuResources[] = { R.menu.a_menu,
-			R.menu.b_menu, R.menu.c_menu };
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -35,7 +33,7 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 
 		
 		
-		myTabhost.addTab(myTabhost.newTabSpec("six")// make a new Tab
+		myTabhost.addTab(myTabhost.newTabSpec("un")// make a new Tab
 				.setIndicator("MMS", getResources().getDrawable(R.drawable.gimp))
 				// set the Title and Icon
 				// .setContent(R.id.widget_layout_red));
@@ -45,7 +43,7 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 
 
 		
-		myTabhost.setCurrentTabByTag("six");
+		myTabhost.setCurrentTabByTag("un");
 	}
 
 	@Override
@@ -54,38 +52,13 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 		// Hold on to this
 		myMenu = menu;
 		myMenu.clear();
-		// Inflate the currently selected menu XML resource.
-		MenuInflater inflater = getMenuInflater();
-		switch (myMenuSettingTag) {
-		case 1:
-			inflater.inflate(myMenuResources[0], menu);
-
-			break;
-		case 2:
-			inflater.inflate(myMenuResources[1], menu);
-			break;
-		case 3:
-			inflater.inflate(myMenuResources[2], menu);
-			break;
-		default:
-			inflater.inflate(myMenuResources[0], menu);
-			break;
-		}
+		
 		return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override
 	public void onTabChanged(String tagString) {
-		// TODO Auto-generated method stub
-		if (tagString.equals("One")) {
-			myMenuSettingTag = 1;
-		}
-		if (tagString.equals("Two")) {
-			myMenuSettingTag = 2;
-		}
-		if (tagString.equals("Three")) {
-			myMenuSettingTag = 3;
-		}
+		
 		if (myMenu != null) {
 			onCreateOptionsMenu(myMenu);
 		}

@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World!</string>
-	<string name="app_name">shh</string>
-	<string name="is_root_dir">已经是根目录.</string>
-	<string name="is_file">文件没有子目录.</string>
-	<string name="startButton">start</string>
-	<string name="stopButton">stop</string>
-	<string name="numpage">--第%1$s页--%2$s</string>
-	<string name="inputcmd">查询：</string>
-	<string name="hint_input_cmd">输入命令</string>
-	<string name="input_folder">目录</string>
-	<string name="hint_input_folder">/system/bin/</string>
-	<string name="query_btn">查询</string>
 	
-	<string name="load_content_title">请稍等</string>
-	<string name="load_content_msg">装载中...</string>
+	<string name="app_name">MMS</string>
 	
-	<string name="jump_tip_title">已装载%1$s页</string>
-	<string name="input_error_toast">跳转页：%1$s 输入错误！</string>
-	<string name="ok_btn">确定</string>	
-	<string name="cancel_btn">取消</string>	
-	<string name="rss_details_link">详细信息请访问以下网址:</string>
-	<string name="net_access_tip_rssexpandactivity">联网失败，请检查！</string>
-	<string name="rss_title_label">标题</string>
-	<string name="rss_url_label">地址</string>
 </resources>
