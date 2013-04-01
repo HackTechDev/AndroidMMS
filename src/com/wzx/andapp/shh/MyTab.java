@@ -28,23 +28,9 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 				myTabhost.getTabContentView(), true);
 		myTabhost.setBackgroundColor(Color.argb(150, 22, 70, 150));
 
-		myTabhost.addTab(myTabhost.newTabSpec("One")// make a new Tab
-				.setIndicator("A", getResources().getDrawable(R.drawable.gimp))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_Blue));
-				// .setContent(new Intent(this, BookFSExplorer.class)));
-				.setContent(new Intent(this, RsslinkListActivity.class)));
-		// set the layout
 
-		myTabhost.addTab(myTabhost
-				.newTabSpec("Two")
-				// make a new Tab
-				.setIndicator("B",
-						getResources().getDrawable(R.drawable.mumule))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_green));
-				.setContent(new Intent(this, RssExpandActivity.class)));
-		// set the layout
+
+
 
 		myTabhost.addTab(myTabhost
 				.newTabSpec("Three")
