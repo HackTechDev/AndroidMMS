@@ -36,7 +36,7 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 		
 		
 		myTabhost.addTab(myTabhost.newTabSpec("six")// make a new Tab
-				.setIndicator("F", getResources().getDrawable(R.drawable.gimp))
+				.setIndicator("MMS", getResources().getDrawable(R.drawable.gimp))
 				// set the Title and Icon
 				// .setContent(R.id.widget_layout_red));
 				.setContent(new Intent(this, MmsListActivity.class)));
