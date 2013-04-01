@@ -49,8 +49,8 @@
         </activity>
         <activity android:name="BookFSExplorer" >
         </activity>
-        <activity android:name="NetAct" >
-        </activity>
+
+        
         <activity android:name="ListViewMainAct" >
         </activity>
         <activity android:name="ListViewForLoading" >

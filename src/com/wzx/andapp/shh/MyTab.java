@@ -32,15 +32,7 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 
 
 
-		myTabhost.addTab(myTabhost
-				.newTabSpec("Three")
-				// make a new Tab
-				.setIndicator("C",
-						getResources().getDrawable(R.drawable.notepad))
-				// set the Title and Icon
-				// .setContent(R.id.widget_layout_red));
-				.setContent(new Intent(this, NetAct.class)));
-		// set the layout
+
 
 		myTabhost.addTab(myTabhost
 				.newTabSpec("Four")
@@ -51,6 +43,8 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 				// .setContent(R.id.widget_layout_red));
 				.setContent(new Intent(this, ListViewMainAct.class)));
 		// set the layout
+		
+		
 		myTabhost.addTab(myTabhost
 				.newTabSpec("five")
 				// make a new Tab
@@ -59,6 +53,9 @@ public class MyTab extends TabActivity implements OnTabChangeListener {
 				// set the Title and Icon
 				// .setContent(R.id.widget_layout_red));
 				.setContent(new Intent(this, ListViewForLoading.class)));
+		
+		
+		
 		myTabhost.addTab(myTabhost.newTabSpec("six")// make a new Tab
 				.setIndicator("F", getResources().getDrawable(R.drawable.gimp))
 				// set the Title and Icon
