@@ -94,9 +94,6 @@ public class MmsListActivity extends Activity {
 		// cursor.close();
 	}
 
-	/**
-	 * ��������˵����ֵ�Ч��
-	 */
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
 		ContextMenuInfo menuInfo = (ContextMenuInfo) item.getMenuInfo();
@@ -222,8 +219,7 @@ public class MmsListActivity extends Activity {
 									// new
 									// String[]{Contacts.Phones.PERSON_ID},Contacts.Phones.NUMBER
 									// +"=?",new String[]{number}, null);
-					if (cPhones.getCount() > 0) {// ���phones���е�PERSON_ID���
-													// people ������ϵ�˵�����
+					if (cPhones.getCount() > 0) {						
 						while (cPhones.moveToNext()) {
 							String pId = null;// cPhones.getString(cPhones.getColumnIndex(Contacts.Phones.PERSON_ID));
 							Uri uriPeo = null;// Uri.parse(Contacts.People.CONTENT_URI+"/"+pId);
@@ -240,19 +236,19 @@ public class MmsListActivity extends Activity {
 										// ","+cPeople.getString(cPeople.getColumnIndex(Contacts.People.DISPLAY_NAME));
 									}
 								}
-								name = number + "/" + str;// ���ͨѶ¼�д��ڣ�����
-															// ���绰����/���֡� ��ʽ��ʾ
+								name = number + "/" + str;
+															
 							} else {
-								name = number;// �����İ����ֱ����ʾ�绰����
+								name = number;
 							}
 						}
 					} else {
-						name = number;// �����İ����ֱ����ʾ�绰����
+						name = number;
 					}
 				}
 
-				// ��ݲ���ID��ѯ���ŵĸ���
-				String selectionPart = new String("mid=" + id);// part���е�mid���Ϊpdu���е�_id
+			
+				String selectionPart = new String("mid=" + id);
 				cPart = getContentResolver().query(CONTENT_URI_PART, null,
 						selectionPart, null, null);
 				String bodyStr = "";
@@ -266,12 +262,12 @@ public class MmsListActivity extends Activity {
 						values[i] = cPart.getString(i);
 					}
 					if (values[3].equals("image/jpeg")
-							|| values[3].equals("image/bmp")) { // �жϸ�������
-						image.setImageBitmap(getMmsImage(values[0]));// �ô�ֻ����ʾһ��ͼƬ���������������ѿ��Ը���Լ�������ImageView����Gallery���޸�һ�·���
+							|| values[3].equals("image/bmp")) {
+						image.setImageBitmap(getMmsImage(values[0]));
 						image.setVisibility(View.VISIBLE);
 					} else if (values[3].equals("text/plain")) {
 						
-						if (values[12] != null) {// ���Ըô����ж�һ�£����_dateΪnull����ֱ����������Ϊ"text"
+						if (values[12] != null) {
 							bodyStr = getMmsText(values[0]);
 						} else {
 							bodyStr = values[13];
@@ -281,7 +277,7 @@ public class MmsListActivity extends Activity {
 				if (!"".equals(subject) && subject != null) {
 					try {
 						sub.setText(new String(subject.getBytes("iso-8859-1"),
-								"UTF-8"));// ���ò�������ı����ʽ
+								"UTF-8"));
 					} catch (UnsupportedEncodingException e) {
 						e.printStackTrace();
 					}
@@ -311,7 +307,7 @@ public class MmsListActivity extends Activity {
 		}
 	}
 
-	private String getMmsText(String _id) { // ��ȡ�ı�����
+	private String getMmsText(String _id) { 
 		Uri partURI = Uri.parse("content://mms/part/" + _id);
 		InputStream is = null;
 		StringBuilder sb = new StringBuilder();
@@ -323,7 +319,7 @@ public class MmsListActivity extends Activity {
 				String temp = reader.readLine();
 				while (temp != null) {
 					sb.append(temp);
-					temp = reader.readLine();// �����Ͽ����ܶ��InputStreamת��string�����£�û����ؼ��һ�䣬����ǧ��һ�ɵĸ���ճ��ô����������Ļ��ǻ��ڴ������
+					temp = reader.readLine();
 				}
 			}
 		} catch (IOException e) {
@@ -341,7 +337,7 @@ public class MmsListActivity extends Activity {
 		return sb.toString();
 	}
 
-	private Bitmap getMmsImage(String _id) { // ��ȡͼƬ����
+	private Bitmap getMmsImage(String _id) { 
 		Uri partURI = Uri.parse("content://mms/part/" + _id);
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		InputStream is = null;
@@ -371,7 +367,7 @@ public class MmsListActivity extends Activity {
 	}
 
 	/**
-	 * ͨ��绰�����ȡ����
+	 *
 	 * 
 	 * @param context
 	 * @param phoneNum
