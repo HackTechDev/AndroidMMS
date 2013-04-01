@@ -24,16 +24,6 @@
         </activity>
 
 
-        <activity android:name=".FSExplorer" >
-        </activity>
-
-        <activity android:name=".BookActivity" >
-        </activity>
-
-        <activity android:name="BookFSExplorer" >
-        </activity>
-
-
         <activity android:name="MmsReaderActivity" >
         </activity>
         <activity android:name="MmsListActivity"></activity>
