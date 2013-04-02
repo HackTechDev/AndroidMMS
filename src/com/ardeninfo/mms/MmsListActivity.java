@@ -324,13 +324,13 @@ public class MmsListActivity extends Activity {
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-			Log.v(TAG, "��ȡ�����쳣" + e.getMessage());
+			Log.v(TAG, "Erreur : " + e.getMessage());
 		} finally {
 			if (is != null) {
 				try {
 					is.close();
 				} catch (IOException e) {
-					Log.v(TAG, "��ȡ�����쳣" + e.getMessage());
+					Log.v(TAG, "Erreur : " + e.getMessage());
 				}
 			}
 		}
@@ -353,13 +353,13 @@ public class MmsListActivity extends Activity {
 					baos.toByteArray().length);
 		} catch (IOException e) {
 			e.printStackTrace();
-			Log.v(TAG, "��ȡͼƬ�쳣" + e.getMessage());
+			Log.v(TAG, "Erreur : " + e.getMessage());
 		} finally {
 			if (is != null) {
 				try {
 					is.close();
 				} catch (IOException e) {
-					Log.v(TAG, "��ȡͼƬ�쳣" + e.getMessage());
+					Log.v(TAG, "Erreur : " + e.getMessage());
 				}
 			}
 		}
