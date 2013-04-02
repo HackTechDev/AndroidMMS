@@ -87,8 +87,8 @@ public class MmsListActivity extends Activity {
 						.getSelectedItemPosition()
 						+ " ### "
 						+ ((ListView) v).getSelectedItemId());
-				menu.add(0, 0, 0, "���������˵�0");
-				menu.add(0, 1, 0, "ɾ��");
+				menu.add(0, 0, 0, "Information");
+				menu.add(0, 1, 0, "Suppression");
 			}
 		});
 		// cursor.close();
@@ -106,7 +106,7 @@ public class MmsListActivity extends Activity {
 		}
 		Toast.makeText(
 				this.getParent(),
-				"����˳����˵�����ĵ�" + item.getItemId() + "����Ŀ " + info.id + " @@@ "
+				"ItemId: " + item.getItemId() + "info.id :" + info.id + " position : "
 						+ info.position, Toast.LENGTH_LONG).show();
 		return super.onContextItemSelected(item);
 	}
@@ -197,8 +197,8 @@ public class MmsListActivity extends Activity {
 			SimpleDateFormat format = new SimpleDateFormat(
 					"yyyy-MM-dd HH:mm:ss");
 			Date time = new Date(
-					cursor.getLong(cursor.getColumnIndex("date")) * 1000);// ����ʱ��
-			int id = cursor.getInt(cursor.getColumnIndex("_id"));// ����Id
+					cursor.getLong(cursor.getColumnIndex("date")) * 1000);
+			int id = cursor.getInt(cursor.getColumnIndex("_id"));
 			String subject = cursor.getString(cursor.getColumnIndex("sub"));
 			Cursor cAdd = null;
 			Cursor cPhones = null;
@@ -393,7 +393,7 @@ public class MmsListActivity extends Activity {
 	public void deleteMms(long id) {
 		int rcount = getContentResolver().delete(
 				Uri.parse("content://mms/" + id), null, null);
-		Toast.makeText(MmsListActivity.this, "ɾ��" + rcount + "��Ϣ",
+		Toast.makeText(MmsListActivity.this, "rcount : " + rcount,
 				Toast.LENGTH_LONG);
 		// ((SimpleCursorAdapter) mmsList.getAdapter()).notifyDataSetChanged();
 		cursor.requery();

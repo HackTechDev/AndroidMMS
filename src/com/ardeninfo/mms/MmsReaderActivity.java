@@ -25,7 +25,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MmsReaderActivity extends Activity {
-	private final Uri CONTENT_URI_PART = Uri.parse("content://mms/part"); // ���Ÿ�����
+	private final Uri CONTENT_URI_PART = Uri.parse("content://mms/part");
 
 	private static final String MSG_ID_STR = "mid=%1$s";
 
@@ -44,7 +44,7 @@ public class MmsReaderActivity extends Activity {
 				null);
 
 		if (mcursor.moveToFirst()) {
-			String subject = mcursor.getString(mcursor.getColumnIndex("sub"));// ��������
+			String subject = mcursor.getString(mcursor.getColumnIndex("sub"));
 			if (!"".equals(subject) && subject != null) {
 				try {
 					setTitle(new String(subject.getBytes("iso-8859-1"), "UTF-8"));
